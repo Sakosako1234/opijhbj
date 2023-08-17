@@ -1,0 +1,72 @@
+#icon1{
+    width : 100px;
+    height : 100px;
+    display: inline-block;
+}
+body{
+    background-color:dodgerblue;
+}
+
+header{
+    background-color: aqua;
+    width:auto;
+    position: relative;
+}
+#name{
+    display: inline-block;
+    text-indent: 10px;
+    text-shadow: 5px 3px 9px rgb(12, 161, 12);
+}
+#icon2{
+    width : 60px;
+    height : 60px;
+    display: inline-block;
+    margin-left: 200px
+}
+#cart{
+    width:400px;
+    height:225px;
+    margin-left:900px;
+    border:1px solid black;
+    bottom: 130px;
+    position: relative;
+    text-align: center;
+    font-size: larger;
+}
+.item{
+    width:450px;
+    height:510px;
+    text-align: center;
+    border:2px solid black;
+    margin: 10px;
+    padding: 3px;
+    display: inline-block;
+}
+.pic{
+    width:400px;
+    height:300px
+}
+section{
+    text-align: center;
+    display: inline-block;
+}
+#but1{
+    margin: 10px;
+    width:100px;
+    height: 30px
+}
+#but2{
+    margin: 10px;
+    width:100px;
+    height: 30px
+}
+#but3{
+    margin: 10px;
+    width:100px;
+    height: 30px
+}
+#but4{
+    margin: 10px;
+    width:100px;
+    height: 30px
+}

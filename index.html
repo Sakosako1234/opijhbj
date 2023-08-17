@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <img src="https://cdn-icons-png.flaticon.com/512/4151/4151901.png" id="icon1">
+        <h1 id="name">Off-brand useless tech👍 </h1> 
+        <img src="https://static-00.iconduck.com/assets.00/shopping-cart-icon-512x462-yrde1eu0.png" id="icon2">
+        <div id="cart">
+            <p>Cart</p>
+             <hr>
+            <p id="pss1"></p>
+            <p id="pss2"></p>
+            <p id="pss3"></p>
+            <p id="pss4"></p>
+           
+        </div>
+    </header>
+    <section>
+        <div class="item">
+            <h1>TV</h1>
+            <img src="https://www.pngmart.com/files/7/LED-Television-PNG-Transparent.png" class="pic">
+            <br>
+            <h5>$1300</h5>
+            <br>
+            <button id="but1" onclick="func1()">Add to cart</button>
+        </div>
+
+         <div class="item">
+            <h1>Smartphone</h1>
+            <img src="https://cdn.tmobile.com/content/dam/t-mobile/en-p/cell-phones/T-Mobile/T-Mobile-REVVL-6-5G/China-Blue/T-Mobile-REVVL-6-5G-China-Blue-frontimage.png" class="pic">
+            <br>
+            <h5>$400</h5>
+            <br>
+            <button id="but2" onclick="func2()">Add to cart</button>
+        </div>
+        
+        <div class="item">
+            <h1>Laptop</h1>
+            <img src="https://www.freeiconspng.com/thumbs/laptop-png/laptop-png-8.png" class="pic">
+            <br>
+            <h5>$1000</h5>
+            <br>
+            <button id="but3" onclick="func3()">Add to cart</button>
+        </div>
+            
+            <div class="item">
+                <h1>Tablet</h1>
+                <img src="https://www.pngall.com/wp-content/uploads/2016/05/Tablet-PNG-Image.png" class="pic">
+                <br>
+                <h5>$300</h5>
+                <br>
+                <button id="but4" onclick="func4()">Add to cart</button>
+            </div>
+    </section>
+    <script>
+        
+        let productData = '{"produqtebi":[' +
+    '{"dasaxeleba":"TV","fasi":"$1300" },' +
+    '{"dasaxeleba":"Smartphone","fasi":"$400" },' +
+    '{"dasaxeleba":"Laptop","fasi":"$1000" },'+
+    '{"dasaxeleba":"Tablet","fasi":"$300" },';
+
+     const obj = JSON.parse(productData);
+
+        function func1(){
+    document.getElementById("pss1").innerHTML =  obj.produqtebi[0].dasaxeleba + " " + obj.produqtebi[0].fasi;
+        }
+        function func2(){
+    document.getElementById("pss2").innerHTML =  obj.produqtebi[1].dasaxeleba + " " + obj.produqtebi[1].fasi;
+        }
+        function func3(){
+     document.getElementById("pss3").innerHTML = obj.produqtebi[2].dasaxeleba + " " + obj.produqtebi[2].fasi;
+        }
+        function func4(){
+    document.getElementById("pss4").innerHTML = obj.produqtebi[3].dasaxeleba + " " + obj.produqtebi[3].fasi;
+        }        
+    </script>
+
+</body>
+</html>
